@@ -27,7 +27,7 @@ def init(width=64, height=64):
     obs_height = height
 
     # USB webcam
-    video_cap = cv2.VideoCapture(1)
+    video_cap = cv2.VideoCapture(-1)
 
     if not video_cap.isOpened():
         raise Exception("Could not open video device")
